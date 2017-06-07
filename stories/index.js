@@ -18,6 +18,7 @@ import Register from '../src/components/Register';
 import SearchBar from '../src/components/SearchBar';
 import DropDownItem from '../src/components/DropDownItem';
 import DropDownList from '../src/components/DropDownList';
+import TopBar from '../src/components/TopBar'
 
 registerScissors(defaultDevices);
 
@@ -27,6 +28,13 @@ const LanguageDecorator = (story) => (
   </I18nextProvider>
 );
 addDecorator(LanguageDecorator);
+
+storiesOf('TopBar', module)
+  .add('Top Bar', () => {
+    return (
+      <TopBar/>
+    );
+  });
 
 storiesOf('CategoryMenu', module)
   .addDecorator((story) => (
