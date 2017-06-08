@@ -3,7 +3,10 @@
 $movile-width : 414px
 @media screen and (max-width: $movile-width)
     .CategoryMenu
-        width: 100%
+        position: absolute
+        z-index: 1
+        width: 100vw
+        left: -95%
 
         ul
             display: flex
